@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
 
 /*
- * 	當你透過UserController護轎UserService方法，
+ * 	當你透過UserController呼叫UserService方法，
  * 	實際上SpringBoot會自動產生一個代理對象，
  * 	在執行方法前後調用LoggingAspect中定義的通知方法，
  * 	從而在控制台打印日誌。(不修改業務邏輯就能統一管理日誌、權限檢查、事務管理等橫切關注)
